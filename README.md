@@ -1,0 +1,2 @@
+# -Safe-Space-Analysis-Social-Distancing-
+What is Safe Space Analysis - Due to COVID -19 outbreak, social distancing is important? Each person infected with the Covid-19 coronavirus is thought to pass it on to an average of 2-3 other people in the early stages of an outbreak. This contagiousness is measured by epidemiologists using something known as a “reproduction number".So distancing will prevail long term.
