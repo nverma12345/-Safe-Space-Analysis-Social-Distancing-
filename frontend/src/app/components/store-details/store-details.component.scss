@@ -1,0 +1,11 @@
+.live-feed{
+    padding-top: 30px;
+    width: 400px;
+    height: 200px;
+}
+
+@media (max-width: 450px){
+    .live-feed{
+        width: 290px;
+    }
+  }

@@ -1,0 +1,14 @@
+.fa-map-marker{
+    margin-right:0.5em;
+}
+@media (max-width: 720px){
+    .location2{
+      display: block;
+    }
+  }
+  
+@media (min-width: 720px){
+    .location2{
+      display: none;
+    }
+}

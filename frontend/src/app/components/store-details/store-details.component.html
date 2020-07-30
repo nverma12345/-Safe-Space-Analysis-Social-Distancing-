@@ -1,0 +1,55 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center">
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+
+    <div class="col-xl-12 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <h3 class="mb-0">WEEKLY STATISTICAL ANALYSIS</h3>
+            </div>
+            <!-- <div class="col-4 text-right">
+              <a href="#!" class="btn btn-sm btn-primary">SAVE</a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-12 graph-card">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row cards-row">
+                <div class="col-lg-4">
+                  <h1 class="card-title text-uppercase text-muted mb-0">{{stores.storename}}</h1>
+                  <span class="h2 font-weight-bold mb-0">Capacity: {{stores.maxLimit}}</span>
+
+                  <p class="mt-3 mb-0 text-muted text-sm cards-padding-top">
+                    <span class="mr-2 h1 font-weight-bold"> Current Count: {{stores.counter}}</span>
+                    <!-- <span class="">Density</span> -->
+                    <i class="ni ni-single-02 text-nowrap people-icon"></i>
+                    <br>
+                    <span class="mr-2 h3 font-weight-bold"
+                      [ngClass]="stores.maxLimit > stores.counter ? 'text-success' : 'text-danger'">{{stores.counter >= stores.maxLimit ?  "OVER CAPACITY" : "UNDER CAPACITY"}}</span>
+                  </p>
+                  <!-- <iframe class="live-feed" src=stores.cameraIp></iframe> -->
+                </div>
+                <div class="col-lg-8">
+                  <!-- <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+            <i class="fas fa-chart-bar"></i>
+          </div> -->
+                  <div class="card-body">
+                    <div class="chart">
+                      <canvas id="chart-orders" class="chart-canvas"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
